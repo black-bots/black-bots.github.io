@@ -10,7 +10,7 @@ body {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 999999;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -114,23 +114,21 @@ async function demo() {
         document.getElementById('dwnl').innerHTML=(`Download will start in ${i} seconds...`);
         await sleep(i * 1000);
     }
-    for (let i = 1; i < 2; i--) {
-        document.getElementById('dwnl').innerHTML=('BlackGram v1.12.21 Downloading..');
-        await sleep(i * 1000);
-    }
-    for (let i = 1; i < 2; i--) {        
-        window.location.replace('https://drive.google.com/uc?export=download&id=1jsUkjmcrDK_40m7PjpRP5YWzNmQ5lWV2');
-        await sleep(i * 1000);
-    }
-
+    document.getElementById('dwnl').innerHTML=('BlackGram v1.12.21 Downloading..');
+    url()
 }
-</script>
-<script>
+
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
+
+function url() {
+  window.location.replace('https://drive.google.com/uc?export=download&id=1jsUkjmcrDK_40m7PjpRP5YWzNmQ5lWV2');
+}
 </script>
-<iframe src="https://abovetheart.wixsite.com/blackbots/product-page/blackgram-1" style="top:-50px; left:0px; bottom:0px; right:0px; width:100%; height:105%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-</iframe>
+	<br>  
 </body>
 </html>
+<iframe src="https://abovetheart.wixsite.com/blackbots/product-page/blackgram-1" style="position:fixed; top:-50px; left:0px; bottom:0px; right:0px; width:100%; height:105%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
+
+</iframe>
