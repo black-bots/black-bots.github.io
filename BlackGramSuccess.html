@@ -1,12 +1,4 @@
-<html onload="document.getElementById("myNav").style.height = "100%";">
-<head></head>
-
-<title>BlackGram</title>
-
-<body>
-  <iframe src="https://abovetheart.wixsite.com/blackbots/product-page/blackgram" style="position:fixed; top:-50px; left:0px; bottom:0px; right:0px; width:100%; height:105%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-</iframe>  
-
+<html onload="openNav()">
   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -91,6 +83,9 @@ h3 {
 </style>
 </head>
 
+<title>BlackGram</title>
+
+
 <div id="myNav" class="overlay">
   <div class="overlay-content">
 
@@ -107,8 +102,6 @@ h3 {
   </div>
 </div>
 
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 <script>
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -132,7 +125,14 @@ async function demo() {
 
 }
 </script>
-
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+</script>
+	<br></br>
+<iframe src="https://abovetheart.wixsite.com/blackbots/product-page/blackgram-1" style="position:fixed; top:-50px; left:0px; bottom:0px; right:0px; width:100%; height:105%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+</iframe>  
 </body>
 
 </html>
